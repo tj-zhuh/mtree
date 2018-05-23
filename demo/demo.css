@@ -1,0 +1,9 @@
+﻿* { border: 0; margin: 0; padding: 0; }
+ul, li { list-style: none; }
+a { text-decoration: none; }
+.title { font: bold 18pt/30px '宋体'; text-align: center; margin-top: 20px; }
+.container { float: left; width: 350px; height: 800px; border: 1px solid #ccc; margin-left: 50px; margin-top: 50px; padding-left: 30px; padding-top: 20px; }
+.operation { float: left; width: 800px; height: 800px; border: 1px solid #ccc; margin-left: 50px; margin-top: 50px; padding-left: 30px; padding-top: 20px; }
+.display { width: 600px; height: 50px; border: 1px solid #ccc; font: 15pt/50px '宋体'; text-indent: 10px; margin-top: 20px; }
+.button { width: 150px; height: 36px; background-color: #d7b23c; border-radius: 3px; text-align: center; line-height: 36px; font-size: 14pt; font-family: SimSun; cursor: pointer; }
+.button { margin-left: 10px; }

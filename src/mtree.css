@@ -1,0 +1,28 @@
+﻿
+
+
+
+/* 树形结构 布局 */
+.mtree { position: relative; margin: 50px 0 0 15px; }
+.mtree ul { margin: 0 0 0 25px; }
+.mtree ul.collapsed { display: none; }
+.mtree li { padding: 18px 5px 0 5px; position: relative; }
+
+/* 树形结构 节点 */
+.mtree span { display: inline-block; height: 34px; font: 12pt/34px '微软雅黑'; margin-left: 5px; padding: 0 8px 0 22px; background-color: #ececec; color: #4b4b4b; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; white-space: nowrap; }
+.mtree span.root { font: normal 14pt/34px '微软雅黑'; }
+.mtree span.leaf { padding-left: 8px; }
+.mtree span.selected { background-color: #bebebe; color: #fff; }
+
+/* 树形结构 +和-图标 */
+.mtree .icon-sign { width: 34px; height: 34px; cursor: pointer; position: absolute; top: 18px; left: -5px; z-index: 1; }
+.mtree .root .icon-sign { left: -10px; top: 0; }
+.mtree .icon-minus-sign { background: url(icon-minus.png) no-repeat; }
+.mtree .icon-plus-sign { background: url(icon-plus.png) no-repeat; }
+
+/* 树形结构 连接虚线*/
+.mtree li::before,
+.mtree li::after { content: ''; left: -20px; position: absolute; right: auto; }
+.mtree li::before { border-left: 1px dashed #bebebe; bottom: 50px; height: 100%; top: 0; width: 1px; }
+.mtree li::after { border-top: 1px dashed #bebebe; height: 34px; top: 34px; width: 28px; }
+.mtree li:last-child::before { height: 30px; }
